@@ -1,4 +1,16 @@
+'use client'
+
 import Image from "next/image";
+import { useState } from "react";
+
+function BoardSquare() {
+  const [value, setValue] = useState(null);
+  function handleClick(){
+    console.log('click');
+    setValue('R');
+  }
+  return <button className="boardSquare" onClick={handleClick}>{value}</button>
+}
 
 export default function Home() {
   return (
@@ -7,84 +19,84 @@ export default function Home() {
         CHECKERS
         <div className="board">
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
           <div className="boardRow">
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
-          <button className="boardSquare"></button>
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
+          <BoardSquare />
           </div>
         </div>
       </main>
