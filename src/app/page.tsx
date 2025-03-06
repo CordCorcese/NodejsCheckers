@@ -7,7 +7,11 @@ function BoardSquare() {
   const [value, setValue] = useState(null);
   function handleClick(){
     console.log('click');
-    setValue('R');
+    if(value != ''){
+      setValue('');
+    }else{
+      setValue('R');
+    }
   }
   return <button className="boardSquare" onClick={handleClick}>{value}</button>
 }
